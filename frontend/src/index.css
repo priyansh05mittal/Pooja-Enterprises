@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+  body {
+    @apply bg-dark text-white font-body antialiased;
+    background-image: radial-gradient(ellipse at top left, rgba(233, 69, 96, 0.05) 0%, transparent 50%),
+      radial-gradient(ellipse at bottom right, rgba(22, 33, 62, 0.5) 0%, transparent 50%);
+    min-height: 100vh;
+  }
+  h1, h2, h3 {
+    @apply font-display;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-dark;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-dark-border rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white font-medium px-6 py-3 rounded-lg transition-all duration-200 cursor-pointer inline-flex items-center gap-2 active:scale-95;
+  }
+  .btn-outline {
+    @apply border border-primary text-primary hover:bg-primary hover:text-white font-medium px-6 py-3 rounded-lg transition-all duration-200 cursor-pointer inline-flex items-center gap-2 active:scale-95;
+  }
+  .card {
+    @apply bg-dark-card border border-dark-border rounded-xl p-5;
+  }
+  .input {
+    @apply w-full bg-dark border border-dark-border text-white placeholder-gray-500 rounded-lg px-4 py-3 focus:outline-none focus:border-primary transition-colors;
+  }
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  .skeleton {
+    @apply bg-dark-border animate-pulse rounded;
+  }
+}
+
+.swiper-pagination-bullet {
+  background: #e94560 !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #e94560 !important;
+}
