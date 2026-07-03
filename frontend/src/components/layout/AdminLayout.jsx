@@ -40,7 +40,9 @@ export default function AdminLayout() {
           <AnimatePresence>
             {sidebarOpen && (
               <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="font-display font-bold text-lg whitespace-nowrap">
-                <span className="text-primary">Shop</span>Elite
+                <Link to="/">
+                <span className="text-primary">Pooja </span>Enterprises
+                </Link>
               </motion.span>
             )}
           </AnimatePresence>
