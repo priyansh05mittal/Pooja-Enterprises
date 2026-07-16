@@ -118,7 +118,7 @@ export default function Login() {
     <div className="min-h-screen flex items-center justify-center px-4 py-12">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="w-full max-w-md">
         <div className="text-center mb-8">
-          <Link to="/" className="font-display text-4xl font-bold"><span className="text-primary">Shop</span>Elite</Link>
+          <Link to="/" className="font-display text-4xl font-bold"><span className="text-primary">Pooja</span>Enterprises</Link>
           <p className="text-gray-400 mt-2">Welcome back! Sign in to continue.</p>
         </div>
 
