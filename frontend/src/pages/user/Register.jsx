@@ -167,7 +167,7 @@ export default function Register() {
       >
         <div className="text-center mb-8">
           <Link to="/" className="font-display text-4xl font-bold">
-            <span className="text-primary">Shop</span>Elite
+            <span className="text-primary">Pooja</span>Enterprises
           </Link>
           <p className="text-gray-400 mt-2">
             Create your account to get started.
